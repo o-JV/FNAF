@@ -6,7 +6,7 @@ let tempoParaParar = 25.083;
 document.addEventListener("keydown", function iniciar() {
     document.removeEventListener("keydown", iniciar); 
     
-    jumpscareVideo.currentTime = 19; 
+    jumpscareVideo.currentTime = 25.083; 
     
     setTimeout(() => {
         telaPreta.style.display = "none";

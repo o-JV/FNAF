@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.tela-preta {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    z-index: 3;
+    color: white;
+    font-size: 24px;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    display: none;
+    z-index: 2;
+}
+
+.menu {
+    font-family: "Rubik Iso", system-ui;
+    font-style: normal;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none; /* Aqui estava o erro! Agora o menu começa invisível */
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.menu button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    border: none;
+}

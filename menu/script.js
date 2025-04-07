@@ -7,7 +7,7 @@ let iniciarButton = document.getElementsByClassName("glitch-text-iniciar")
 document.addEventListener("keydown", function iniciar() {
     document.removeEventListener("keydown", iniciar); 
     
-    jumpscareVideo.currentTime = 19;  //test, 19s
+    jumpscareVideo.currentTime = 25.083;  //test, 19s
     
     setTimeout(() => {
         telaPreta.style.display = "none";

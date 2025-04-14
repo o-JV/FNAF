@@ -12,7 +12,8 @@ body {
 
 .tela-preta {
     position: absolute;
-    top: 0;
+    display: flex;
+    flex-direction: column;
     left: 0;
     width: 100vw;
     height: 100vh;
@@ -20,10 +21,12 @@ body {
     justify-content: center;
     align-items: center;
     background: black;
+    background-size: cover;
     z-index: 4;
     color: white;
     font-size: 24px;
 }
+
 
 video {
     position: absolute;
@@ -66,6 +69,7 @@ video {
 #logo{
   width: 345px;
   height: auto;
+  display: none;
  
 }
  
@@ -336,3 +340,105 @@ video {
     left: 0;
     animation: glitch3 1s infinite;
   }
+
+  #danger h2{
+    color: rgb(170, 21, 21);
+    display: flex;
+  flex-direction: column;
+ text-align: center;
+  }
+
+  #danger{
+    color: rgb(170, 21, 21);
+    position: absolute;
+    display: flex;
+  flex-direction: column;
+margin-top: 12em;
+ text-align: center;
+ top: 50%;
+ animation: perigo 1s infinite;
+  }
+
+  #telaPreta h4{
+      position: absolute;
+      display: flex;
+      top: 50vh;
+  }
+
+@keyframes perigo {
+  0%{
+    color: rgb(170, 21, 21);
+  }
+  25%{
+    font-family: "Rubik Glitch", system-ui;
+    color: rgb(142, 12, 12);
+  }
+  50%{
+    color: rgb(170, 21, 21);
+  }
+  75%{
+    font-family: "Rubik Glitch", system-ui;
+    color: rgb(142, 12, 12);
+  }
+  100%{
+    color: rgb(170, 21, 21);
+  }
+
+
+}
+
+
+#initial-text span {
+  display: inline-block;
+  animation: wave 1.5s infinite;
+}
+
+@keyframes wave {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+#initial-text span:nth-child(1) { animation-delay: 0s; }
+#initial-text span:nth-child(2) { animation-delay: 0.05s; }
+#initial-text span:nth-child(3) { animation-delay: 0.1s; }
+#initial-text span:nth-child(4) { animation-delay: 0.15s; }
+#initial-text span:nth-child(5) { animation-delay: 0.2s; }
+#initial-text span:nth-child(6) { animation-delay: 0.25s; }
+#initial-text span:nth-child(7) { animation-delay: 0.3s; }
+#initial-text span:nth-child(8) { animation-delay: 0.35s; }
+#initial-text span:nth-child(9) { animation-delay: 0.4s; }
+#initial-text span:nth-child(10) { animation-delay: 0.45s; }
+#initial-text span:nth-child(11) { animation-delay: 0.5s; }
+#initial-text span:nth-child(12) { animation-delay: 0.55s; }
+#initial-text span:nth-child(13) { animation-delay: 0.6s; }
+#initial-text span:nth-child(14) { animation-delay: 0.65s; }
+#initial-text span:nth-child(15) { animation-delay: 0.7s; }
+#initial-text span:nth-child(16) { animation-delay: 0.75s; }
+#initial-text span:nth-child(17) { animation-delay: 0.8s; }
+#initial-text span:nth-child(18) { animation-delay: 0.85s; }
+#initial-text span:nth-child(19) { animation-delay: 0.9s; }
+#initial-text span:nth-child(20) { animation-delay: 0.95s; }
+#initial-text span:nth-child(21) { animation-delay: 1s; }
+#initial-text span:nth-child(22) { animation-delay: 1.05s; }
+#initial-text span:nth-child(23) { animation-delay: 1.1s; }
+#initial-text span:nth-child(24) { animation-delay: 1.15s; }
+#initial-text span:nth-child(25) { animation-delay: 1.2s; }
+#initial-text span:nth-child(26) { animation-delay: 01.25s; }
+#initial-text span:nth-child(27) { animation-delay: 1.3s; }
+#initial-text span:nth-child(28) { animation-delay: 1.35s; }
+#initial-text span:nth-child(29) { animation-delay: 1.4s; }
+#initial-text span:nth-child(30) { animation-delay: 1.45s; }
+#initial-text span:nth-child(31) { animation-delay: 1.5s; }
+#initial-text span:nth-child(32) { animation-delay: 1.55s; }
+#initial-text span:nth-child(33) { animation-delay: 1.6s; }
+#initial-text span:nth-child(34) { animation-delay: 1.65s; }
+#initial-text span:nth-child(35) { animation-delay: 1.7s; }
+#initial-text span:nth-child(36) { animation-delay: 1.75s; }
+#initial-text span:nth-child(37) { animation-delay: 1.8s; }
+#initial-text span:nth-child(38) { animation-delay: 1.85s; }
+#initial-text span:nth-child(39) { animation-delay: 1.9s; }
+#initial-text span:nth-child(40) { animation-delay: 2s; }
+#initial-text span:nth-child(41) { animation-delay: 2.05s; }
+#initial-text span:nth-child(42) { animation-delay: 2.1s; }
+#initial-text span:nth-child(43) { animation-delay: 2.15s; }
+#initial-text span:nth-child(44) { animation-delay: 2.2s; }
